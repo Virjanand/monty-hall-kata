@@ -4,7 +4,7 @@ There is a gameshow hosted by Monty Hall where contestants try to win a big priz
 
 ## ToDo:
 - [x] set up Git
-- [ ] set up Gradle: Jupiter
+- [x] set up Gradle: Jupiter
 - [ ] 3 doors, prize behind door 1 -> getDoorWithPrize = 1
 - [ ] reveal door 2 -> getRevealedDoor = 2
 - [ ] choose door 3 -> getChosenDoor = 3

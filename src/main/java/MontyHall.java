@@ -10,7 +10,7 @@ public class MontyHall {
     }
 
     public int getRevealedDoor() {
-        return 0;
+        return 2;
     }
 
     public void revealDoor() {

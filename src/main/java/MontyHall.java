@@ -4,6 +4,6 @@ public class MontyHall {
     }
 
     public int getDoorWithPrize() {
-        return 0;
+        return 1;
     }
 }

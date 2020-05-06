@@ -1,9 +1,11 @@
 public class MontyHall {
-    public void setDoorWithPrize(int i) {
+    private int doorWithPrize;
 
+    public void setDoorWithPrize(int doorWithPrize) {
+        this.doorWithPrize = doorWithPrize;
     }
 
     public int getDoorWithPrize() {
-        return 1;
+        return doorWithPrize;
     }
 }

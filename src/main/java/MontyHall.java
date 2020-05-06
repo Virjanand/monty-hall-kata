@@ -15,6 +15,11 @@ public class MontyHall {
     }
 
     public void revealDoor() {
-        revealedDoor = 2;
+        for (int i = 1; i <= 3; i++) {
+            if (i != doorWithPrize) {
+                revealedDoor = i;
+                return;
+            }
+        }
     }
 }

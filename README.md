@@ -6,7 +6,7 @@ There is a gameshow hosted by Monty Hall where contestants try to win a big priz
 - [x] set up Git
 - [x] set up Gradle: Jupiter
 - [x] 3 doors, prize behind door 1 -> getDoorWithPrize = 1
-- [ ] reveal door 2 -> getRevealedDoor = 2
+- [x] reveal door 2 -> getRevealedDoor = 2
 - [ ] choose door 3 -> getChosenDoor = 3
 - [ ] isWin -> false
 - [ ] switchDoor -> getChosenDoor = 1

@@ -8,4 +8,12 @@ public class MontyHall {
     public int getDoorWithPrize() {
         return doorWithPrize;
     }
+
+    public int getRevealedDoor() {
+        return 0;
+    }
+
+    public void revealDoor() {
+
+    }
 }

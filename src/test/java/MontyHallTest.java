@@ -10,4 +10,12 @@ public class MontyHallTest {
         montyHall.setDoorWithPrize(1);
         assertEquals(1, montyHall.getDoorWithPrize());
     }
+
+    @Test
+    void revealDoor() {
+        MontyHall montyHall = new MontyHall();
+        montyHall.setDoorWithPrize(1);
+        montyHall.revealDoor();
+        assertEquals(2, montyHall.getRevealedDoor());
+    }
 }

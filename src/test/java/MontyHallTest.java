@@ -1,20 +1,24 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MontyHallTest {
+    private MontyHall montyHall;
+
+    @BeforeEach
+    void createMontyHallWithPrize() {
+        montyHall = new MontyHall();
+        montyHall.setDoorWithPrize(1);
+    }
 
     @Test
     void doorWithPrize() {
-        MontyHall montyHall = new MontyHall();
-        montyHall.setDoorWithPrize(1);
         assertEquals(1, montyHall.getDoorWithPrize());
     }
 
     @Test
     void revealDoor() {
-        MontyHall montyHall = new MontyHall();
-        montyHall.setDoorWithPrize(1);
         montyHall.revealDoor();
         assertEquals(2, montyHall.getRevealedDoor());
     }

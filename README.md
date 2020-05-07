@@ -12,3 +12,6 @@ There is a gameshow hosted by Monty Hall where contestants try to win a big priz
 - [ ] switchDoor -> getChosenDoor = 1
 - [ ] isWin -> true
 - [ ] run test 100 times with random inputs for prizeDoor and chosenDoor
+- [ ] refactor to streams
+- [ ] use map with enum for state to easily change number of doors
+- [ ] state pattern?

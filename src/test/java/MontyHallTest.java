@@ -22,4 +22,11 @@ public class MontyHallTest {
         montyHall.revealDoor();
         assertEquals(2, montyHall.getRevealedDoor());
     }
+
+    @Test
+    void chooseDoor() {
+        montyHall.revealDoor();
+        montyHall.choosDoor(3);
+        assertEquals(3, montyHall.getChosenDoor());
+    }
 }

@@ -22,4 +22,12 @@ public class MontyHall {
             }
         }
     }
+
+    public void choosDoor(int i) {
+
+    }
+
+    public int getChosenDoor() {
+        return 0;
+    }
 }

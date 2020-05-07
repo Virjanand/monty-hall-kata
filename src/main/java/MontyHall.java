@@ -28,6 +28,6 @@ public class MontyHall {
     }
 
     public int getChosenDoor() {
-        return 0;
+        return 3;
     }
 }

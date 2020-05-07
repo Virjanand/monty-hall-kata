@@ -1,6 +1,7 @@
 public class MontyHall {
     private int doorWithPrize;
     private int revealedDoor;
+    private int chosenDoor;
 
     public void setDoorWithPrize(int doorWithPrize) {
         this.doorWithPrize = doorWithPrize;
@@ -23,11 +24,11 @@ public class MontyHall {
         }
     }
 
-    public void choosDoor(int i) {
-
+    public void choosDoor(int chosenDoor) {
+        this.chosenDoor = chosenDoor;
     }
 
     public int getChosenDoor() {
-        return 3;
+        return chosenDoor;
     }
 }

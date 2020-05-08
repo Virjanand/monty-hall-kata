@@ -33,6 +33,11 @@ public class MontyHall {
     }
 
     public void switchDoor() {
-        chosenDoor = 1;
+        for (int i = 1; i <=3; i++) {
+            if (i != getRevealedDoor() && i != getChosenDoor()) {
+                chosenDoor = i;
+                return;
+            }
+        }
     }
 }

@@ -40,4 +40,8 @@ public class MontyHall {
             }
         }
     }
+
+    public boolean isWin() {
+        return true;
+    }
 }

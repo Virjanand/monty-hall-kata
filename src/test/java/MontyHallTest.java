@@ -36,4 +36,11 @@ public class MontyHallTest {
         montyHall.switchDoor();
         assertEquals(1, montyHall.getChosenDoor());
     }
+
+    @Test
+    void isWinNoSwitch() {
+        montyHall.chooseDoor(3);
+        montyHall.revealDoor();
+        assertEquals(false, montyHall.isWin());
+    }
 }

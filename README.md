@@ -8,7 +8,7 @@ There is a gameshow hosted by Monty Hall where contestants try to win a big priz
 - [x] 3 doors, prize behind door 1 -> getDoorWithPrize = 1
 - [x] reveal door 2 -> getRevealedDoor = 2
 - [x] choose door 3 -> getChosenDoor = 3
-- [ ] isWin -> false
+- [x] isWin -> false
 - [x] switchDoor -> getChosenDoor = 1
 - [ ] choose door 2 -> getRevealedDoor = 3
 - [ ] isWin -> true

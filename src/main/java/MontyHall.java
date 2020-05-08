@@ -24,11 +24,15 @@ public class MontyHall {
         }
     }
 
-    public void choosDoor(int chosenDoor) {
+    public void chooseDoor(int chosenDoor) {
         this.chosenDoor = chosenDoor;
     }
 
     public int getChosenDoor() {
         return chosenDoor;
+    }
+
+    public void switchDoor() {
+
     }
 }

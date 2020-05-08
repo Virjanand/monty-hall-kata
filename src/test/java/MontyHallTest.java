@@ -25,8 +25,15 @@ public class MontyHallTest {
 
     @Test
     void chooseDoor() {
-        montyHall.revealDoor();
-        montyHall.choosDoor(3);
+        montyHall.chooseDoor(3);
         assertEquals(3, montyHall.getChosenDoor());
+    }
+
+    @Test
+    void switchDoor() {
+        montyHall.chooseDoor(3);
+        montyHall.revealDoor();
+        montyHall.switchDoor();
+        assertEquals(1, montyHall.getChosenDoor());
     }
 }

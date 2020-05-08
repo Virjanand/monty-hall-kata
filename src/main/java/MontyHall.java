@@ -33,6 +33,6 @@ public class MontyHall {
     }
 
     public void switchDoor() {
-
+        chosenDoor = 1;
     }
 }

@@ -10,7 +10,7 @@ There is a gameshow hosted by Monty Hall where contestants try to win a big priz
 - [x] choose door 3 -> getChosenDoor = 3
 - [x] isWin -> false
 - [x] switchDoor -> getChosenDoor = 1
-- [ ] choose door 2 -> getRevealedDoor = 3
+- [x] choose door 2 -> getRevealedDoor = 3
 - [ ] isWin -> true
 - [ ] run test 100 times with random inputs for prizeDoor and chosenDoor
 - [ ] refactor to streams

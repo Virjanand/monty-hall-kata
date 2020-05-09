@@ -30,6 +30,13 @@ public class MontyHallTest {
     }
 
     @Test
+    void chooseDoor2RevealDoor3() {
+        montyHall.chooseDoor(3);
+        montyHall.revealDoor();
+        assertEquals(3, montyHall.getRevealedDoor());
+    }
+
+    @Test
     void switchDoor() {
         montyHall.chooseDoor(3);
         montyHall.revealDoor();

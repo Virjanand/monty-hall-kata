@@ -31,7 +31,7 @@ public class MontyHallTest {
 
     @Test
     void chooseDoor2RevealDoor3() {
-        montyHall.chooseDoor(3);
+        montyHall.chooseDoor(2);
         montyHall.revealDoor();
         assertEquals(3, montyHall.getRevealedDoor());
     }

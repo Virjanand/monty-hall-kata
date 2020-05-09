@@ -56,6 +56,6 @@ public class MontyHallTest {
         montyHall.chooseDoor(3);
         montyHall.revealDoor();
         montyHall.switchDoor();
-        assertEquals(false, montyHall.isWin());
+        assertEquals(true, montyHall.isWin());
     }
 }

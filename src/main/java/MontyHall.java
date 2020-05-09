@@ -42,6 +42,6 @@ public class MontyHall {
     }
 
     public boolean isWin() {
-        return false;
+        return chosenDoor == doorWithPrize;
     }
 }

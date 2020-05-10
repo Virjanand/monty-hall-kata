@@ -1,7 +1,9 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Random;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MontyHallTest {
     private MontyHall montyHall;
@@ -48,7 +50,7 @@ public class MontyHallTest {
     void isWinNoSwitch() {
         montyHall.chooseDoor(3);
         montyHall.revealDoor();
-        assertEquals(false, montyHall.isWin());
+        assertFalse(montyHall.isWin());
     }
 
     @Test
@@ -56,6 +58,26 @@ public class MontyHallTest {
         montyHall.chooseDoor(3);
         montyHall.revealDoor();
         montyHall.switchDoor();
-        assertEquals(true, montyHall.isWin());
+        assertTrue(montyHall.isWin());
+    }
+
+    @Test
+    void runMontyHall100Times() {
+        int numberOfWins = 0;
+        for (int i = 0; i < 100; i++) {
+            MontyHall montyHall = new MontyHall();
+            montyHall.setDoorWithPrize(getRandomDoorNumber());
+            montyHall.chooseDoor(getRandomDoorNumber());
+            montyHall.revealDoor();
+//            montyHall.switchDoor();
+            if (montyHall.isWin()) {
+                numberOfWins++;
+            }
+        }
+        System.out.println(numberOfWins);
+    }
+
+    private int getRandomDoorNumber() {
+        return new Random().nextInt(3) + 1;
     }
 }

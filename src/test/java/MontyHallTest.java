@@ -10,7 +10,7 @@ public class MontyHallTest {
 
     @BeforeEach
     void createMontyHallWithPrize() {
-        montyHall = new MontyHall();
+        montyHall = new MontyHall(3);
         montyHall.setDoorWithPrize(1);
     }
 
@@ -65,7 +65,6 @@ public class MontyHallTest {
     void runMontyHall100Times() {
         int numberOfWins = 0;
         for (int i = 0; i < 100; i++) {
-            MontyHall montyHall = new MontyHall();
             montyHall.setDoorWithPrize(getRandomDoorNumber());
             montyHall.chooseDoor(getRandomDoorNumber());
             montyHall.revealDoor();

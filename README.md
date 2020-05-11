@@ -16,4 +16,4 @@ There is a gameshow hosted by Monty Hall where contestants try to win a big priz
 - [ ] ~~refactor to streams~~
 - [ ] ~~use map with enum for state to easily change number of doors~~
 - [ ] ~~state pattern?~~
-- [ ] give number of doors
+- [x] give number of doors

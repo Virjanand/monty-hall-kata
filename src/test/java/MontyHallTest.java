@@ -63,12 +63,14 @@ public class MontyHallTest {
 
     @Test
     void runMontyHall100Times() {
+        int numberOfDoors = 3;
+        MontyHall montyHall = new MontyHall(numberOfDoors);
         int numberOfWins = 0;
         for (int i = 0; i < 100; i++) {
-            montyHall.setDoorWithPrize(getRandomDoorNumber());
-            montyHall.chooseDoor(getRandomDoorNumber());
+            montyHall.setDoorWithPrize(getRandomDoorNumber(numberOfDoors));
+            montyHall.chooseDoor(getRandomDoorNumber(numberOfDoors));
             montyHall.revealDoor();
-//            montyHall.switchDoor();
+            montyHall.switchDoor();
             if (montyHall.isWin()) {
                 numberOfWins++;
             }
@@ -76,7 +78,7 @@ public class MontyHallTest {
         System.out.println(numberOfWins);
     }
 
-    private int getRandomDoorNumber() {
-        return new Random().nextInt(3) + 1;
+    private int getRandomDoorNumber(int numberOfDoors) {
+        return new Random().nextInt(numberOfDoors) + 1;
     }
 }

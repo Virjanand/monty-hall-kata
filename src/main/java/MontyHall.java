@@ -1,8 +1,8 @@
 public class MontyHall {
+    private final int numberOfDoors;
     private int doorWithPrize;
     private int revealedDoor;
     private int chosenDoor;
-    private int numberOfDoors;
 
     public MontyHall(int numberOfDoors) {
         this.numberOfDoors = numberOfDoors;
@@ -21,9 +21,9 @@ public class MontyHall {
     }
 
     public void revealDoor() {
-        for (int i = 1; i <= numberOfDoors; i++) {
-            if (i != doorWithPrize && i != chosenDoor) {
-                revealedDoor = i;
+        for (int doorNumber = 1; doorNumber <= numberOfDoors; doorNumber++) {
+            if (doorNumber != doorWithPrize && doorNumber != chosenDoor) {
+                revealedDoor = doorNumber;
                 return;
             }
         }
@@ -38,9 +38,9 @@ public class MontyHall {
     }
 
     public void switchDoor() {
-        for (int i = 1; i <= numberOfDoors; i++) {
-            if (i != getRevealedDoor() && i != getChosenDoor()) {
-                chosenDoor = i;
+        for (int doorNumber = 1; doorNumber <= numberOfDoors; doorNumber++) {
+            if (doorNumber != getRevealedDoor() && doorNumber != getChosenDoor()) {
+                chosenDoor = doorNumber;
                 return;
             }
         }
